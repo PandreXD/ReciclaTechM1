@@ -11,9 +11,10 @@ header {
   border: solid;
   height: 10vh;
 }
-header h1 {
-  background-color: red;
-}
 header nav {
-  background-color: aquamarine;
+  height: 10vh;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }/*# sourceMappingURL=style.css.map */
