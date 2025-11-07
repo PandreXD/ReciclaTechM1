@@ -6,14 +6,32 @@
 
 header{
     display: flex; // por padrão os itens do container ficam um do lado do outro
-    //justify-content: space-between; // alinha o primeiro no começo, o ultimo no final e os outris separados igualmente
+    //justify-content: space-between; // alinha o primeiro no começo, o ultimo no final e os outros separados igualmente
     justify-content: space-around;
     align-items: center;
+   
 
     border: solid;
     height: 10vh;
 
-   
+   .btnverde{
+    background-color: #16a34a;
+    padding: 20px;
+    border-radius: 6px;
+    color: #ffffff;
+   }
+
+   .caixalogo{
+    display: flex;
+    width: 20%;
+    border: solid;
+    justify-content: space-between;
+    
+    h1{
+        color: #1F2937;
+        font-size: 2.5rem;
+    }
+   }
 
     nav{
         height: 10vh;
@@ -21,6 +39,57 @@ header{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+
+        a{
+            color: #4B5563;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
     }
+}
+
+.apresentaçao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+}
+
+.produtosdisponiveis{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+
+
+    article{
+         border: solid #16a34a;
+         width:18%;
+         height: 60vh;
+         display: flex;
+        // flex-direction: row; //por padrão ao aplicar o display flex a direção e em linha (row)
+        flex-direction: column; // (column) para ficar em coluna 
+        justify-content: space-between;
+        align-items: center;
+
+          img{
+        width: 100%;
+
+    }
+
+    button{
+        margin-bottom: 2rem;
+        
+    }
+
+    }
+
+
+    
+
+
+
+
+
 }
 
