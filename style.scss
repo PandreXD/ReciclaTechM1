@@ -11,7 +11,7 @@ header{
     align-items: center;
    
 
-    border: solid;
+    border-bottom: solid #B4AEAE;
     height: 10vh;
 
    .btnverde{
@@ -24,7 +24,7 @@ header{
    .caixalogo{
     display: flex;
     width: 20%;
-    border: solid;
+    
     justify-content: space-between;
     
     h1{
@@ -104,12 +104,64 @@ header{
         }
     }
 }
+.comoFunciona{
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-evenly;
+
+    h2{
+        height: 10vh;
+        color: #1F2937;
+        font-size: 2rem;
+    }
+
+    p{
+        height: 10vh;
+        color:#4B5563;
+        font-size: 1.25rem;
+        width: 65%;
+    }
+
+
+     section{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+
+    div{
+       display: flex;
+       width: 30%;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+       background-color: #F3F5F8;
+       
+       h3{
+        height: 8vh;
+       }
+       
+    }
+    }
+    
+}
+
+.verde{
+    color: #16a34a;
+}
+ .blue{
+  color: #2563EB;
+ }
 
 .produtosdisponiveis{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
+    background-color: #F3F5F8;
+    
 
 
     article{
@@ -150,6 +202,159 @@ header{
 
 
 }
+
+.tituloFeedback{
+    height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h3{
+        padding: 4rem;
+        font-size: 2rem;
+        
+    }
+
+    p{
+        font-size: 1.5rem;
+        height: 18vh;
+        color: #4B5563;
+    }
+
+    section{
+        height: 50vh;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    article{
+       display: flex;       
+       justify-content: center;
+       flex-direction: column;
+       border: solid green;
+       align-items: center;
+       background-color: #F3F5F8;
+       width: 19%;
+       height: 35vh;
+       border-radius: 5px 5px 5px 5px;
+    
+        
+       output{
+        width: 100%;
+        align-items: flex-start;
+        height: 7vh;
+        color: rgba(255, 174, 0, 0.637);
+        text-shadow:#1F2937;
+       }
+
+       p{
+        font-size: 1rem;
+
+       }
+       strong{
+        align-items: flex-start;
+        width: 100%;
+       }
+       span{
+        align-items: flex-start;
+        width: 100%;
+        color: #4B5563;
+       }
+
+       
+    }
+}
+
+.cs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    justify-content: space-evenly;
+    background-color: #F3F5F8;
+
+    h2{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+        width: 38%;
+    }
+
+    .div{
+        display: flex;
+        justify-content:space-evenly;
+        border-radius: 4px 4px 4px 4px;
+        background-color: #16a34a;
+       
+    }
+}
+
+footer {
+  background: #1F2937;
+  color: #dcdcdc;
+  padding: 40px 20px;
+
+  .final {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      h2 {
+        color: #FFFFFF;
+      }
+    }
+
+    p {
+      margin-top: 15px;
+      line-height: 1.6;
+      color: #c0c0c0;
+    }
+
+    .socials {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+
+      .icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .blue { background: #1e60ff; }
+      .pink { background: #ff0f87; }
+      .sky  { background: #55a8ff; }
+    }
+  }
+
+  .copy {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #9CA3AF;
+  }
+}
+
+
+
 
 // Quero que você aplique esse estilo em telas de 0px até 768px
 @media(max-width: 500px) {
@@ -227,6 +432,133 @@ header{
             }
         }
     }
+
+    @media (max-width: 500px) {
+
+  /* COMO FUNCIONA */
+  .comoFunciona {
+    height: auto;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+
+    h2 {
+      height: auto;
+      font-size: 1.6rem;
+    }
+
+    p {
+      height: auto;
+      width: 90%;
+      font-size: 1rem;
+    }
+
+    section {
+      flex-direction: column;
+      gap: 20px;
+
+      div {
+        width: 90%;
+        padding: 1rem 0;
+      }
+    }
+  }
+
+  /* PRODUTOS DISPONÍVEIS */
+  .produtosdisponiveis {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
+    gap: 2rem;
+
+    article {
+      width: 90%;
+      height: auto;
+      padding-bottom: 1rem;
+
+      img {
+        width: 100%;
+      }
+
+      p {
+        width: 90%;
+      }
+    }
+  }
+
+  /* FEEDBACK */
+  .tituloFeedback {
+    height: auto;
+    padding: 2rem 0;
+
+    h3 {
+      padding: 2rem 0;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    p {
+      width: 90%;
+      font-size: 1rem;
+      text-align: center;
+      height: auto;
+    }
+
+    section {
+      flex-direction: column;
+      height: auto;
+      gap: 20px;
+    }
+
+    article {
+      width: 90%;
+      height: auto;
+      padding: 1rem;
+    }
+  }
+
+  /* CONTATO + SUPORTE */
+  .cs {
+    height: auto;
+    padding: 2rem 0;
+    text-align: center;
+
+    p {
+      width: 90%;
+      font-size: 1.2rem;
+    }
+
+    .div {
+      flex-direction: column;
+      gap: 10px;
+      width: 90%;
+      padding: 1rem;
+    }
+  }
+
+  /* FOOTER */
+  footer {
+
+    .final {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+
+      .logo-area {
+        justify-content: center;
+      }
+
+      p {
+        width: 100%;
+      }
+
+      .socials {
+        justify-content: center;
+      }
+    }
+  }
+}
+
 
 }
 
